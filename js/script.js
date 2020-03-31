@@ -13,12 +13,6 @@ $(function() {
 
 function initMap() {
 
-    var list = [Kiev, Odessa, Chernivtsi, Lviv, Ternopil, Zhitomir, Bila_Zerkva, Uman, Sevastopol, Simferopol,
-        Herson, Lazurnoe, Vinniza, Poltava, Zaporizhya, Uzhgorod, Mukachevo, Ivano_F, Kam_Pod, Hmelnizkiy, Belgorod_Dn,
-        Yalta, Sudak, Alushta, Dnipro, Berdyansk, Askania_Nova, Mygiya, Vien, Madrid, Barcelona, Zaragoza, Figueres, Collioure,
-        Lisbon, Cascais, Sintra, Cabo_da_Roca, Munchen, Timisoara, Hunedoara, Split, Omis, Trogir, Mostar, Budva, Brescia,
-        Venice, Milan, Minsk, Brest, Hatin, Antalya, Alanya, Athens, Varna
-    ]
 
     map = new google.maps.Map(document.getElementById('map'), {
         center: {

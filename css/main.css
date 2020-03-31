@@ -10,6 +10,20 @@ body {
     src: url(../fonts/GothaProLig.otf);
 }
 
+#bg {
+  background: url('../images/bg.jpg') no-repeat center top #FFF;
+  position: absolute;
+  background-size: cover;
+    /*padding-top: -500px;*/
+  height: 700px;
+  width: 100%;
+  display: flex;
+  background-attachment: fixed;
+  /*background-position: center;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #avatar_menu {
     height: 1.5rem;
     width: 1.5rem;
@@ -24,7 +38,7 @@ body {
 #about {
     position: relative;
     width: 100%;
-    height: 525px;
+    height: 700px;
     margin-top: 51px;
 }
 
