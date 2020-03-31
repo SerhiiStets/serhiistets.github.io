@@ -1,387 +1,222 @@
 body {
-  -webkit-font-smoothing: antialiased;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: Gotham;
-  src: url(../fonts/GothaProLig.otf);
-}
-
-
-/* Nav Bar */
-
-#avatar_menu {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-.navbar {
-  background-color: #FCFCFC;
-  padding: 0px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
-}
-
-#top {
-  position: relative;
-  top: 51px;
-  height: 500px;
+    font-family: Gotham;
+    src: url(../fonts/GothaProLig.otf);
 }
 
 #bg {
-  background: url('../images/top/bg.jpg') no-repeat center top #FFF;
+  background: url('../images/bg.jpg') no-repeat center top #FFF;
   position: absolute;
   background-size: cover;
-  height: 500px;
+    /*padding-top: -500px;*/
+  height: 700px;
   width: 100%;
   display: flex;
   background-attachment: fixed;
-  background-position: center;
+  /*background-position: center;*/
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#hello {
-  position: relative;
-  top: 25px;
-  color: #ffffff;
-  font-family: Gotham;
+#avatar_menu {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
-#avatar {
-  position: relative;
-  background: url('../images/top/avatar.png') center center no-repeat;
-  background-size: cover;
-  height: 200px;
-  width: 200px;
-}
-
-#top_content {
-  position: relative;
-  top: 150px;
+.navbar {
+    background-color: #FCFCFC;
+    padding: 0px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 #about {
-  position: relative;
-  width: 100%;
-  height: 525px;
-  margin-top: 51px;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin-top: 51px;
 }
 
 #about_content {
-  position: relative;
-  top: 90px;
-}
-
-#profile {
-  position: relative;
-  top: 40px;
-}
-
-#profile_picture {
-  background: url('../images/about/me.svg') center center no-repeat;
-  background-size: cover;
-  width: 20rem;
-  height: 24rem;
-}
-
-#profile_info {
-  color: #3d4451;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #dedede;
-}
-
-#profile_title {
-  font-size: 36px;
-  line-height: 1.1;
-  font-weight: 700;
-}
-
-#profile_title span {
-  font-weight: 300;
-}
-
-#profile_position {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: 0;
-}
-
-#profile_list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#profile_list li {
-  margin-bottom: 13px;
-}
-
-#profile_list #title {
-  display: block;
-  float: left;
-  color: #333333;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-#profile_list #cont {
-  display: block;
-  margin-left: 125px;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #9da0a7;
+    position: relative;
+    top: 90px;
 }
 
 #development {
-  position: relative;
-  display: block;
-  color: #444;
-  width: 100%;
-  height: 960px;
-  background-color: #f6f6f6;
-  font-size: 1rem;
-}
-
-#soft_block {
-  position: relative;
-  top: 100px;
-}
-
-#dev_title {
-  font-family: Gotham;
-  font-size: 2.625rem;
-  line-height: 1.4;
-}
-
-#software_img {
-  background: url('../images/development/software.png') center center no-repeat;
-  background-size: cover;
-  margin-top: 30px;
-  width: 22rem;
-  height: 27rem;
+    position: relative;
+    display: block;
+    color: #444;
+    width: 100%;
+    height: 960px;
+    background-color: #f6f6f6;
+    font-size: 1rem;
 }
 
 .featurette-hr {
-  margin-top: 100px;
-  border-bottom-color: #eee;
-  overflow: hidden;
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid #dfe2e5;
-}
-
-#web_block {
-  position: relative;
-  margin-top: 125px;
-  left: 65px;
-}
-
-#web_img {
-  position: relative;
-  background: url('../images/development/web.png') center center no-repeat;
-  background-size: cover;
-  width: 22rem;
-  height: 24rem;
+    margin-top: 0px;
+    border-bottom-color: #eee;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #dfe2e5;
 }
 
 #hobbies {
-  position: relative;
-  width: 100%;
-  height: 525px;
-}
-
-#hobbie_content{
     position: relative;
-    top: 170px;
+    width: 100%;
+    height: 525px;
 }
 
-#photo{
-  background: url('../images/hobbies/photo-camera.svg') no-repeat center top #FFF;
-  background-size: cover;
-  height: 128px;
-  width: 128px;
+#hobbie_content {
+    position: relative;
+    top: 150px;
 }
 
-#skate{
-  background: url('../images/hobbies/skateboard.png') no-repeat center top #FFF;
-  background-size: cover;
-  height: 128px;
-  width: 128px;
+#photo {
+    background: url('../images/hobbies/photo-camera.svg') no-repeat center top #FFF;
+    background-size: cover;
+    height: 128px;
+    width: 128px;
 }
 
-#guitar{
-  background: url('../images/hobbies/guitar.svg') no-repeat center top #FFF;
-  background-size: cover;
-  height: 128px;
-  width: 128px;
+#skate {
+    background: url('../images/hobbies/skateboard.png') no-repeat center top #FFF;
+    background-size: cover;
+    height: 128px;
+    width: 128px;
 }
 
-#photo_block, #skate_block, #guitar_block{
+#guitar {
+    background: url('../images/hobbies/guitar.svg') no-repeat center top #FFF;
+    background-size: cover;
+    height: 128px;
+    width: 128px;
+}
+
+#photo_block,
+#skate_block,
+#guitar_block {
     width: 190px;
 }
 
-#photo_block a:hover{
+#photo_block a:hover {
     text-decoration: none;
 }
 
-#hob_title{
+#hob_title {
     font-size: 22px;
     margin: 15px;
 }
 
 #travel {
-  position: relative;
-  width: 100%;
-  height: 70px;
-  background-color: #f6f6f6;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #f6f6f6;
 }
 
 #travel_text {
-  position: relative;
-  top: 15px;
-  color: #444;
-  font-size: 24px;
-  font-weight: 300;
+    position: relative;
+    top: 15px;
+    color: #444;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 #marker {
-  position: absolute;
-  width: 4.5rem;
-  height: 4.5rem;
-  left: 87%;
-  top: 20px;
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+    left: 87%;
+    top: 20px;
 }
 
 #map {
-  position: relative;
-  width: 100%;
-  height: 500px;
+    position: relative;
+    width: 100%;
+    height: 500px;
 }
 
 #bottom {
-  position: relative;
-  width: 100%;
-  height: 525px;
-  background-color: #818D92;
+    position: relative;
+    width: 100%;
+    height: 162px;
+    padding-top: 60px;
+    background-color: #21242a;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
-  #top_content {
-    top: 50px;
-  }
+    #hobbies {
+        height: 1020px;
+    }
+    
+    #hobbie_content {
+        top: 40px;
+    }
+    
+    #photo,
+    #skate,
+    #guitar {
+        margin-top: 40px;
+    }
+    
+    #marker {
+        display: none;
+    }
+    
+    #travel_text {
+        font-size: 25px;
+    }
+    
+    #travel {
+        height: 70px;
+    }
+}
 
-  #avatar {
-    top: 20px;
-  }
-
-  #about_content {
-    top: 50px;
-  }
-
-  #profile {
-    position: relative;
-    top: 0px;
-  }
-
-  #profile_picture {
-    width: 8rem;
-    height: 12rem;
-  }
-
-  #profile_title, #profile_position {
+#footer-nav {
     text-align: center;
-  }
+}
 
-  #profile_info {
-    border-bottom: 0px;
-  }
+#footer-nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
 
-  #list {
+#footer-nav>ul>li {
+    float: left;
+    padding: 0 10px;
+}
+
+.social-icons li {
     display: block;
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #software_img {
-    margin-top: 40px;
-    width: 290px;
-    height: 345px;
-  }
-
-  #soft_block {
-    top: 20px;
-    text-align: center;
-  }
-
-  .featurette-hr {
-    margin-top: 60px;
-  }
-
-  #web_block {
-    top: -420px;
-    left: 0px;
-    text-align: center;
-  }
-
-
-  #web_img {
-    top: 130px;
-  }
-
- #development {
-    height: 1180px;
-  }
-
-  #hobbies{
-    height: 1020px;
-  }
-
-  #hobbie_content{
-    top: 40px;
-  }
-
-  #photo, #skate, #guitar{
-    margin-top: 40px;
-  }
-
-  #marker {
-    display: none;
-  }
-
-  #travel_text {
-    font-size: 25px;
-  }
-
-  #travel {
-    height: 70px;
-  }
+    padding: 0 10px;
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  ...
+#footer-nav .social-icons>li a {
+    font-size: 18px;
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  #soft_block {
-    left: 20px;
-  }
+.social-icons a {
+    transition: all 0.2s linear;
+    color: #777;
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  ...
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+#footer-text {
+    color: #777;
+}
+
+#copyright_text {
+    font-weight: normal;
+    font-size: 15px;
 }
