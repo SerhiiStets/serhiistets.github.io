@@ -58,15 +58,29 @@
  }
  /* Create four equal columns that sits next to each other */
  
+.main-heade, #masthead{
+    height: 71px !important;    
+}
+
+footer .footer-center {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
  #photos img {
-     
      margin-bottom: 10px;
-    
      vertical-align: middle;
      height: auto;
      width: 100%;
  }
+#li_space{
+    height: 20px;
+}
 
+#photos{
+    margin-left: -18px;
+    margin-top: 0px;
+}
 
 li img{
      -webkit-transition: 0.2s;
@@ -74,6 +88,9 @@ li img{
 /* Responsive layout - makes a two column-layout instead of four columns */
  
  @media (min-width: 1500px) {
+     .up{
+         /*margin-top: 15px;*/
+     }
      #photos {
          -webkit-column-count: 4;
          -moz-column-count: 4;
@@ -85,9 +102,7 @@ li img{
  }
  
  @media screen and (max-width: 1500px) {
-     .ver {
-         display: none;
-     }
+
      #photos {
          -webkit-column-count: 3;
          -moz-column-count: 3;
