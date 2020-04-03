@@ -85,6 +85,8 @@ footer .footer-center {
 li img{
      -webkit-transition: 0.2s;
 }
+
+
 /* Responsive layout - makes a two column-layout instead of four columns */
  
  @media (min-width: 1500px) {
@@ -112,7 +114,30 @@ li img{
          column-gap: 10px;
      }
  }
+
+@media (max-width: 960px){
+    #show_all{
+        display: none;
+        
+    }
+    
+    #show_all_m{
+        display: block;
+    }
+}
  
+
+
+@media (min-width: 960px){
+    #show_all_m{
+        display: none;
+        
+    }
+    
+    #show_all{
+        display: block;
+    }
+}
  @media screen and (min-width: 800px) {
      li img:hover {
          -webkit-transition: .5s;
@@ -143,6 +168,14 @@ li img{
          column-gap: 10px;
      }
  }
+
+/*
+ @media screen and (max-width: 960px) {
+     #show_all {
+         color: white;
+     }
+ }
+ */
  
  .mix,
  .gap {
