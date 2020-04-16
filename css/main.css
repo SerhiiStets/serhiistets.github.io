@@ -1,222 +1,196 @@
-body {
-    -webkit-font-smoothing: antialiased;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    text-rendering: optimizeLegibility;
+ @media (max-width:959px) {
+     .navbar-brand>* {
+         height: 30px!important
+     }
+ }
+ 
+ @media (min-width:960px) {
+     .limit-width {
+         max-width: 1200px;
+         margin: auto
+     }
+     #show_all {
+         /*color: white;*/
+     }
+ }
+ 
+ @media (min-width:960px) {
+     .main-header,
+     .vmenu-container {
+         width: 276px
+     }
+ }
+ 
+ .menu-primary ul.menu-smart>li>a,
+ .menu-primary ul.menu-smart li.dropdown>a,
+ .menu-primary ul.menu-smart li.mega-menu>a,
+ .vmenu-container ul.menu-smart>li>a,
+ .vmenu-container ul.menu-smart li.dropdown>a {
+     text-transform: uppercase
+ }
+ 
+ .menu-primary ul.menu-smart ul a,
+ .vmenu-container ul.menu-smart ul a {
+     text-transform: uppercase
+ }
+ 
+ body.menu-custom-padding .col-lg-0.logo-container,
+ body.menu-custom-padding .col-lg-2.logo-container,
+ body.menu-custom-padding .col-lg-12 .logo-container,
+ body.menu-custom-padding .col-lg-4.logo-container {
+     padding-top: 27px;
+     padding-bottom: 27px
+ }
+ 
+ body.menu-custom-padding .col-lg-0.logo-container.shrinked,
+ body.menu-custom-padding .col-lg-2.logo-container.shrinked,
+ body.menu-custom-padding .col-lg-12 .logo-container.shrinked,
+ body.menu-custom-padding .col-lg-4.logo-container.shrinked {
+     padding-top: 18px;
+     padding-bottom: 18px
+ }
+ 
+ @media (max-width:959px) {
+     body.menu-custom-padding .menu-container .logo-container {
+         padding-top: 18px!important;
+         padding-bottom: 18px!important
+     }
+ }
+ /* Create four equal columns that sits next to each other */
+ 
+ .main-heade,
+ #masthead {
+     height: 71px !important;
+ }
+ 
+ footer .footer-center {
+     padding-top: 100px;
+     padding-bottom: 100px;
+ }
+ 
+ #photos img {
+     margin-bottom: 10px;
+     vertical-align: middle;
+     height: auto;
+     width: 100%;
+ }
+ 
+ #li_space {
+     height: 20px;
+ }
+ 
+ #photos {
+     margin-left: -18px;
+     margin-top: 0px;
+ }
+ 
+ li img {
+     -webkit-transition: 0.2s;
+ }
+ 
+
+#imgwrap {
+     display: none;
+  text-align: center;
 }
 
-@font-face {
-    font-family: Gotham;
-    src: url(../fonts/GothaProLig.otf);
-}
-
-#bg {
-  background: url('../images/bg.jpg') no-repeat center top #FFF;
-  position: absolute;
-  background-size: cover;
-    /*padding-top: -500px;*/
-  height: 700px;
-  width: 100%;
-  display: flex;
-  background-attachment: fixed;
-  /*background-position: center;*/
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#avatar_menu {
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-.navbar {
-    background-color: #FCFCFC;
-    padding: 0px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-#about {
-    position: relative;
-    width: 100%;
-    height: 700px;
-    margin-top: 51px;
-}
-
-#about_content {
-    position: relative;
-    top: 90px;
-}
-
-#development {
-    position: relative;
-    display: block;
-    color: #444;
-    width: 100%;
-    height: 960px;
-    background-color: #f6f6f6;
-    font-size: 1rem;
-}
-
-.featurette-hr {
-    margin-top: 0px;
-    border-bottom-color: #eee;
-    overflow: hidden;
-    background: transparent;
-    border: 0;
-    border-bottom: 1px solid #dfe2e5;
-}
-
-#hobbies {
-    position: relative;
-    width: 100%;
-    height: 525px;
-}
-
-#hobbie_content {
-    position: relative;
-    top: 150px;
-}
-
-#photo {
-    background: url('../images/hobbies/photo-camera.svg') no-repeat center top #FFF;
-    background-size: cover;
-    height: 128px;
-    width: 128px;
-}
-
-#skate {
-    background: url('../images/hobbies/skateboard.png') no-repeat center top #FFF;
-    background-size: cover;
-    height: 128px;
-    width: 128px;
-}
-
-#guitar {
-    background: url('../images/hobbies/guitar.svg') no-repeat center top #FFF;
-    background-size: cover;
-    height: 128px;
-    width: 128px;
-}
-
-#photo_block,
-#skate_block,
-#guitar_block {
-    width: 190px;
-}
-
-#photo_block a:hover {
-    text-decoration: none;
-}
-
-#hob_title {
-    font-size: 22px;
-    margin: 15px;
-}
-
-#travel {
-    position: relative;
-    width: 100%;
-    height: 70px;
-    background-color: #f6f6f6;
-}
-
-#travel_text {
-    position: relative;
-    top: 15px;
-    color: #444;
-    font-size: 24px;
-    font-weight: 300;
-}
-
-#marker {
-    position: absolute;
-    width: 4.5rem;
-    height: 4.5rem;
-    left: 87%;
-    top: 20px;
-}
-
-#map {
-    position: relative;
-    width: 100%;
-    height: 500px;
-}
-
-#bottom {
-    position: relative;
-    width: 100%;
-    height: 162px;
-    padding-top: 60px;
-    background-color: #21242a;
-    color: #ffffff;
-}
-
-@media (max-width: 768px) {
-    #hobbies {
-        height: 1020px;
-    }
+ #to_be_cont {
     
-    #hobbie_content {
-        top: 40px;
-    }
-    
-    #photo,
-    #skate,
-    #guitar {
-        margin-top: 40px;
-    }
-    
-    #marker {
-        display: none;
-    }
-    
-    #travel_text {
-        font-size: 25px;
-    }
-    
-    #travel {
-        height: 70px;
-    }
-}
-
-#footer-nav {
-    text-align: center;
-}
-
-#footer-nav ul {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-
-#footer-nav>ul>li {
-    float: left;
-    padding: 0 10px;
-}
-
-.social-icons li {
-    display: block;
-    padding: 0 10px;
-}
-
-#footer-nav .social-icons>li a {
-    font-size: 18px;
-}
-
-.social-icons a {
-    transition: all 0.2s linear;
-    color: #777;
-}
-
-.social-icons a:hover {
-    color: #ffffff;
-}
-
-#footer-text {
-    color: #777;
-}
-
-#copyright_text {
-    font-weight: normal;
-    font-size: 15px;
-}
+     width: 100%;
+     height: 100%;
+     display:flex;
+    align-items: center;
+    justify-content: center;
+     overflow: hidden;
+     color: white;
+     padding-top: 50px;
+     padding-bottom: 50px;
+     padding-left: 15px;
+     padding-right: 15px;
+     
+ }
+ 
+ #road_work_img {
+     width: 250px;
+     padding-bottom: 30px;
+ }
+ 
+ #to_be_cont h1 {
+     font-family: Poppins;
+     font-size: 1.2em;
+     font-weight: 600;
+     letter-spacing: .05em;
+ }
+ 
+ @media (min-width: 1500px) {
+     #photos {
+         -webkit-column-count: 4;
+         -moz-column-count: 4;
+         column-count: 4;
+         -webkit-column-gap: 10px;
+         -moz-column-gap: 10px;
+         column-gap: 10px;
+     }
+     /*
+       li img:hover {
+         -webkit-transition: .5s;
+         transform: scale(1.12);
+     }*/
+ }
+ 
+ @media screen and (max-width: 1500px) {
+     #photos {
+         -webkit-column-count: 3;
+         -moz-column-count: 3;
+         column-count: 3;
+         -webkit-column-gap: 10px;
+         -moz-column-gap: 10px;
+         column-gap: 10px;
+     }
+ }
+ 
+ @media (max-width: 960px) {
+     #show_all {
+         display: none;
+     }
+     #show_all_m {
+         display: block;
+     }
+ }
+ 
+ @media (min-width: 960px) {
+     #show_all_m {
+         display: none;
+     }
+     #show_all {
+         display: block;
+     }
+ }
+ 
+ @media screen and (max-width: 800px) {
+     #photos {
+         -webkit-column-count: 2;
+         -moz-column-count: 2;
+         column-count: 2;
+         -webkit-column-gap: 10px;
+         -moz-column-gap: 10px;
+         column-gap: 10px;
+     }
+ }
+ 
+ @media screen and (max-width: 600px) {
+     #photos {
+         -webkit-column-count: 1;
+         -moz-column-count: 1;
+         column-count: 1;
+         -webkit-column-gap: 10px;
+         -moz-column-gap: 10px;
+         column-gap: 10px;
+     }
+ }
+ 
+ .mix,
+ .gap {
+     display: inline-block;
+     vertical-align: top;
+ }

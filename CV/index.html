@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Serhii Stets | Resume</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="stylesheet" href="css/material.min.css">
+
+    <link rel="icon" href="images/ico/favicon.ico">
+</head>
+
+<body>
+    <div class="navbar navbar-default header navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand navbar-center" id="menu_main" href="javascript:void(0)">Serhii Stets</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="javascript:void(0);" id="menu_dev">Skills</a></li>
+                    <li><a href="javascript:void(0);" id="menu_hobbies">Hobbies</a></li>
+                    <li><a href="javascript:void(0);" id="menu_travel">Travel</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="portfolio/index.html" target="blank"><img src="images/nav bar/blog.svg" id="avatar_menu" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div id="bg"></div>
+        <div class="container-fluid" id="top_content">
+            
+        </div>
+    </div>
+
+    <div id="development">
+
+    </div>
+
+    <div id="hobbies">
+        <!-- TODO image hover, smaller line-->
+
+        <div id="hobbie_content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg"></div>
+                    <div class="col-lg col-md" align="center">
+                        <div id="photo"></div>
+                        <div id="photo_block">
+                            <h2 id="hob_title">Photography</h2>
+                            <hr class="featurette-hr" id="hob_line"></hr>
+                            <p>You can visit my photo<a href="https://unsplash.com/@serhii_stets" target="blank"> portfolio</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg col-md" align="center">
+                        <div id="skate"></div>
+                        <div id="skate_block">
+                            <h2 id="hob_title">Skating</h2>
+                            <hr class="featurette-hr" id="hob_line"></hr>
+                            <p>I've been skating since I was 8 years old</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg col-md" align="center">
+                        <div id="guitar"></div>
+                        <div id="guitar_block">
+                            <h2 id="hob_title">Guitar</h2>
+                            <hr class="featurette-hr" id="hob_line"></hr>
+                            <p>I've been playing acoustic guitar for 5 years</p>
+                        </div>
+                    </div>
+                    <div class="col-lg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="travel">
+        <h3 id="travel_text" align="center ">My travel map</h3>
+        <img src="images/travel/marker.svg " id="marker" />
+    </div>
+
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEB-vIbg5LyLLWRJGO5te7xg_jqz6Q5co&callback=initMap" async defer></script>
+
+    <div id="bottom">
+        <div class="container">
+            <div id="footer-nav" class="col-sm-12">
+                <ul class="social-icons" style="opacity: 1;">
+                    <li><a href="https://www.facebook.com/serhiistets3" target="_blank" title="" data-placement="top" data-original-title="Facebook"><i class="fab fa-facebook fa-w-16"></i></a></li>
+
+                    <li><a href="https://www.instagram.com/serhii_stets/" target="_blank" title="" data-placement="top" data-original-title="Instagram"><i class="fab fa-instagram fa-w-16"></i></a></li>
+
+                    <li><a href="https://github.com/SerhiiStets" target="_blank" title="" data-placement="top" data-original-title="Flickr"><i class="fab fa-github fa-w-16"></i></a></li>
+
+                    <li><a href="https://www.flickr.com/people/148911723@N07/" target="_blank" title="" data-placement="top" data-original-title="Pinterest"><i class="fab fa-flickr fa-w-16"></i></a></li>
+
+                    <li><a href="https://twitter.com/serhii_stets" target="_blank" title="" data-placement="top" data-original-title="Twitter"><i class="fab fa-twitter fa-w-16"></i></a></li>
+
+                    <li><a href="https://www.linkedin.com/in/serhii-stets-635548134/" target="_blank" title="" data-placement="top" data-original-title="Vimeo"><i class="fab fa-linkedin fa-w-16"></i></a></li>
+
+                </ul>
+            </div>
+            <div id="footer-text" class="col-sm-12">
+                <p style="text-align: center;padding-top:10px" id="copyright_text">Copyright © 2019 Serhii Stets. All rights reserved.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/places.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

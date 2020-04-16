@@ -1,0 +1,222 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url(../fonts/GothaProLig.otf);
+}
+
+#bg {
+  background: url('../images/bg.jpg') no-repeat center top #FFF;
+  position: absolute;
+  background-size: cover;
+    /*padding-top: -500px;*/
+  height: 700px;
+  width: 100%;
+  display: flex;
+  background-attachment: fixed;
+  /*background-position: center;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#avatar_menu {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.navbar {
+    background-color: #FCFCFC;
+    padding: 0px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+#about {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin-top: 51px;
+}
+
+#about_content {
+    position: relative;
+    top: 90px;
+}
+
+#development {
+    position: relative;
+    display: block;
+    color: #444;
+    width: 100%;
+    height: 960px;
+    background-color: #f6f6f6;
+    font-size: 1rem;
+}
+
+.featurette-hr {
+    margin-top: 0px;
+    border-bottom-color: #eee;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #dfe2e5;
+}
+
+#hobbies {
+    position: relative;
+    width: 100%;
+    height: 525px;
+}
+
+#hobbie_content {
+    position: relative;
+    top: 150px;
+}
+
+#photo {
+    background: url('../images/hobbies/photo-camera.svg') no-repeat center top #FFF;
+    background-size: cover;
+    height: 128px;
+    width: 128px;
+}
+
+#skate {
+    background: url('../images/hobbies/skateboard.png') no-repeat center top #FFF;
+    background-size: cover;
+    height: 128px;
+    width: 128px;
+}
+
+#guitar {
+    background: url('../images/hobbies/guitar.svg') no-repeat center top #FFF;
+    background-size: cover;
+    height: 128px;
+    width: 128px;
+}
+
+#photo_block,
+#skate_block,
+#guitar_block {
+    width: 190px;
+}
+
+#photo_block a:hover {
+    text-decoration: none;
+}
+
+#hob_title {
+    font-size: 22px;
+    margin: 15px;
+}
+
+#travel {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #f6f6f6;
+}
+
+#travel_text {
+    position: relative;
+    top: 15px;
+    color: #444;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#marker {
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+    left: 87%;
+    top: 20px;
+}
+
+#map {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#bottom {
+    position: relative;
+    width: 100%;
+    height: 162px;
+    padding-top: 60px;
+    background-color: #21242a;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    #hobbies {
+        height: 1020px;
+    }
+    
+    #hobbie_content {
+        top: 40px;
+    }
+    
+    #photo,
+    #skate,
+    #guitar {
+        margin-top: 40px;
+    }
+    
+    #marker {
+        display: none;
+    }
+    
+    #travel_text {
+        font-size: 25px;
+    }
+    
+    #travel {
+        height: 70px;
+    }
+}
+
+#footer-nav {
+    text-align: center;
+}
+
+#footer-nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#footer-nav>ul>li {
+    float: left;
+    padding: 0 10px;
+}
+
+.social-icons li {
+    display: block;
+    padding: 0 10px;
+}
+
+#footer-nav .social-icons>li a {
+    font-size: 18px;
+}
+
+.social-icons a {
+    transition: all 0.2s linear;
+    color: #777;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+#footer-text {
+    color: #777;
+}
+
+#copyright_text {
+    font-weight: normal;
+    font-size: 15px;
+}
